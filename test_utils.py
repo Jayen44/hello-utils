@@ -11,4 +11,8 @@ def test_capitalize_words():
     assert capitalize_words("python is fun") == "Python Is Fun"
 
 
-# is_palindrome is untested
+def test_is_palindrome():
+    assert is_palindrome("racecar") is True
+    assert is_palindrome("race car") is True
+    assert is_palindrome("hello") is False
+    assert is_palindrome("") is True
